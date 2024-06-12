@@ -1,0 +1,23 @@
+root: /mnt/d/python/dataset/outputs/2023-05-05/
+n_process: 2
+camera_position:
+  - 1.0
+  - 0.0
+  - 2.0
+lidar_position:
+  - 1.0
+  - 0.0
+  - 2.0
+fov: 110
+voxel_resolution: 0.2
+voxel_size:
+  - 192
+  - 192
+  - 64
+bev_offset_forward: -64
+bev_resolution: 0.2
+offset_z: -20
+cml_project: MasterThesis/world_model
+cml_task_name: voxelization
+cml_task_type: data_processing
+cml_tags: null
