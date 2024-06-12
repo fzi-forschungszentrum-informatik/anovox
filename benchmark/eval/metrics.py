@@ -3,8 +3,8 @@ from sklearn.metrics import roc_curve, auc, average_precision_score, f1_score, c
 # import open3d as o3d
 import argparse
 
-gt_path = "/home/lukasnroessler/Anomaly_Datasets/AnoVox/Scenario_911ef0ea-bec9-4f78-aa3b-a3b83ef07319/VOXEL_GRID/VOXEL_GRID_413.npy"
-pred_path = "/home/lukasnroessler/Projects/RbA/voxelpreds/voxelarray_score_0000000011.npy"
+gt_path = "<...>/Anomaly_Datasets/AnoVox/Scenario_911ef0ea-bec9-4f78-aa3b-a3b83ef07319/VOXEL_GRID/VOXEL_GRID_413.npy"
+pred_path = "<...>/RbA/voxelpreds/voxelarray_score_0000000011.npy"
 
 
 COLOR_PALETTE = (
@@ -279,13 +279,13 @@ def compute_metrics(preds, gts, ignore=[]):
 
 if __name__ == "__main__":
     """""use this if you want to evaluate for a single voxel grid"""
-    # first voxel grid in AnoVox sample: /home/tes_unreal/Downloads/Anovox_Sample/AnoVox/Scenario_bfc1d392-fb70-4d51-a915-2b238690eb5d/VOXEL_GRID/VOXEL_GRID_5496.npy
+    # first voxel grid in AnoVox sample: <...>/Anovox_Sample/AnoVox/Scenario_bfc1d392-fb70-4d51-a915-2b238690eb5d/VOXEL_GRID/VOXEL_GRID_5496.npy
     parser = argparse.ArgumentParser(description='Evaluation')
 
-    parser.add_argument('--score_prediction', type=str, # default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--score_prediction', type=str, # default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""score file""")
 
-    parser.add_argument('--groundtruth_file', type=str, # default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--groundtruth_file', type=str, # default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""ground truth file""")
 
     # parser.add_argument('--output', type=str, default='imagevoxels',

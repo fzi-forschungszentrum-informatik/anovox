@@ -22,7 +22,7 @@ RbA:
 ReaL:
 
     ```
-    cd Open_world_3D_semantic_segmentation/semantickittiscripts
+    cd REAL/semantickittiscripts
     python train_cylinder_asym_ood_basic.py --config_path /path/to/configdir/config/anovox_train.yaml
     ```
 
@@ -43,7 +43,7 @@ RbA:
 
     ```
     cd RbA
-    evaluate_ood.py  --out_path /home/tes_unreal/Desktop/BA/RbA/ood_out --models_folder ckpts/ --model_mode selective --selected_models swin_b_1dl --datasets_folder /home/tes_unreal/Downloads/Anovox_Sample/  --dataset_mode selective --selected_dataset anovox --store_anomaly_scores
+    evaluate_ood.py  --out_path <...>/RbA/ood_out --models_folder ckpts/ --model_mode selective --selected_models swin_b_1dl --datasets_folder <...>/Anovox_Sample/  --dataset_mode selective --selected_dataset anovox --store_anomaly_scores
     ```
 
     - Scores are stored in anomaly_scores/swin_b_1dl/anovox/arrays
@@ -53,7 +53,7 @@ ReaL:
     - change path for uncertainty_path in main() method
 
     ```
-    cd Open_world_3D_semantic_segmentation/semantickittiscripts
+    cd REAL/semantickittiscripts
     python val_cylinder_asym_ood_anovox.py --config_path /path_to_config_dir/config/anovox_val.yaml
     ```
 

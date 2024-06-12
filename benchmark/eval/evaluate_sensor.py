@@ -381,9 +381,9 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='OOD Evaluation')
-    parser.add_argument('--predictions', type=str, #default='/home/lukasnroessler/Projects/RbA/voxelpreds',
+    parser.add_argument('--predictions', type=str, #default='<...>/RbA/voxelpreds',
                         help=""""path to folder storing predictions in voxel format.""")
-    parser.add_argument('--anovox_datapath', type=str, #default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--anovox_datapath', type=str, #default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""path to anovox root""")
     parser.add_argument('--store_final_values', action='store_true',
         help=""""store the final arrays with prediction and ground truth values to be evaluated. For testing purposes""")

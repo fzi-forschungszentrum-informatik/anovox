@@ -58,7 +58,7 @@ def label_mask(image_path, label):
     return roi_img
 
 if __name__== "__main__":
-    example_image = "/home/lukasnroessler/Downloads/Anovox_Sample/Anovox/Scenario_ef183332-f895-4456-82ed-370fae4a7e88/SEMANTIC_IMG/SEMANTIC_IMG_5720.png"
+    example_image = "<...>/Anovox_Sample/Anovox/Scenario_ef183332-f895-4456-82ed-370fae4a7e88/SEMANTIC_IMG/SEMANTIC_IMG_5720.png"
     label = 14 # car/ ego vehicle
     roi = label_mask(example_image, label)
     roi_img = Image.fromarray(roi)

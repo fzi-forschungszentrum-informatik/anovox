@@ -9,7 +9,7 @@ import shutil
 # import imageio.v3 as iio
 # taken from cityscapesscripts/helpers/labels.py
 
-# python convert_dataset/convert_images.py --dataset_path /home/tes_unreal/Desktop/Dataset_BA/outputtest/Final_Output_19_40-17_09_2023/ --cityscapes_format
+# python convert_dataset/convert_images.py --dataset_path <...>/Dataset/outputtest/Final_Output_19_40-17_09_2023/ --cityscapes_format
 # a label and all meta information
 Label = namedtuple( 'Label' , [
 
@@ -556,13 +556,13 @@ def get_anovox_folders(dataset_root):
 
 parser = argparse.ArgumentParser(description='OOD Evaluation')
 
-parser.add_argument('--dataset_path', type=str, default= '/home/tes_unreal/Desktop/Dataset_BA/Final_Output_22_09-08_11_2023', # '/home/lukasnroessler/dataset/NormalityEnv/Normality_Sample',
+parser.add_argument('--dataset_path', type=str, default= '<...>/Dataset/Final_Output_22_09-08_11_2023', # '<...>/dataset/NormalityEnv/Normality_Sample',
                     help= """Name the path of dataset to be converted""")
 
 parser.add_argument('--cityscapes_format', action='store_true',
                     help="""If passed, converts anomaly data of AnoVox into cityscapes format, where ground truth is labeled via train ids.""")
 
-parser.add_argument('--train_split_size', type=int, default=595 , # '/home/lukasnroessler/dataset/NormalityEnv/Normality_Sample',
+parser.add_argument('--train_split_size', type=int, default=595 , # '<...>/dataset/NormalityEnv/Normality_Sample',
                     help= """number of scenarios for train split""")
 
 
@@ -593,5 +593,5 @@ def main(args):
 if __name__ == "__main__":
     # args = sys.argv[1:]
     # print("args", args)
-    # args = ['/home/lukasnroessler/Projects/voxelworld/Data/Outputs/Final_Output_18_04-16_08_2023']
+    # args = ['<...>/Data/Outputs/Final_Output_18_04-16_08_2023']
     main()

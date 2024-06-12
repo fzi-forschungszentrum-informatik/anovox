@@ -103,7 +103,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='OOD Evaluation')
 
-    parser.add_argument('--dataset_path', type=str, # default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--dataset_path', type=str, # default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""path to anovox dataset""")
 
     parser.add_argument('--camera_fov', type=float, default=90.0,

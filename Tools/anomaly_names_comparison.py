@@ -12,8 +12,8 @@ def write_names_to_file(filename, names):
 
 def main():
     # Read names from two files
-    file1_names = read_names_from_file('/home/tes_unreal/PycharmProjects/anovox/Tools/all.txt')
-    file2_names = read_names_from_file('/home/tes_unreal/PycharmProjects/anovox/Tools/anomaly_names.txt')
+    file1_names = read_names_from_file('<...>/anovox/Tools/all.txt')
+    file2_names = read_names_from_file('<...>/anovox/Tools/anomaly_names.txt')
 
     # Check which names are in file1 but not in file2
     names_not_in_file2 = [name for name in file1_names if name not in file2_names]

@@ -9,7 +9,7 @@ import shutil
 # import cv2
 # taken from cityscapesscripts/helpers/labels.py
 
-# python convert_dataset/convert_images.py --dataset_path /home/tes_unreal/Desktop/Dataset_BA/outputtest/Final_Output_19_40-17_09_2023/ --cityscapes_format
+# python convert_dataset/convert_images.py --dataset_path <...>/Dataset/outputtest/Final_Output_19_40-17_09_2023/ --cityscapes_format
 # a label and all meta information
 Label = namedtuple( 'Label' , [
 
@@ -425,7 +425,7 @@ def create_cityscapes_folders(root):
 
 parser = argparse.ArgumentParser(description='OOD Evaluation')
 
-parser.add_argument('--dataset_path', type=str, default='/home/lukasnroessler/Projects/voxelworld/Data/Outputs/Final_Output_18_04-16_08_2023',
+parser.add_argument('--dataset_path', type=str, default='<...>/Data/Outputs/Final_Output_18_04-16_08_2023',
                     help= """Name the path of dataset to be evaluated""")
 
 args = parser.parse_args()
@@ -456,5 +456,5 @@ def main():
 if __name__ == "__main__":
     # args = sys.argv[1:]
     # print("args", args)
-    # args = ['/home/lukasnroessler/Projects/voxelworld/Data/Outputs/Final_Output_18_04-16_08_2023']
+    # args = ['<...>/Data/Outputs/Final_Output_18_04-16_08_2023']
     main()

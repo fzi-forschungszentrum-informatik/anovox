@@ -154,9 +154,9 @@ def main(args):
 if __name__ == "__main__":
     # voxelizer = PointCloudVoxelizer(voxel_resolution=0.2, voxel_grid_size=(1000,1000,64))
     parser = argparse.ArgumentParser(description='OOD Evaluation')
-    parser.add_argument('--predictions', type=str, #default='/home/lukasnroessler/Projects/RbA/voxelpreds',
+    parser.add_argument('--predictions', type=str, #default='<...>/RbA/voxelpreds',
                         help=""""path to folder storing predictions in voxel format.""")
-    parser.add_argument('--anovox_datapath', type=str, #default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--anovox_datapath', type=str, #default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""path to anovox root""")
     # parser.add_argument('--intersect_grids', action='store_true',
     #                     help=""""set to false if you already have ground truth voxel grids that match the size of the prediction voxel grids""")
@@ -170,6 +170,6 @@ if __name__ == "__main__":
     # main(args)
     # predictions, pcd_paths = voxelizer.collect_data()
     preds = "voxelscores_12frame/pcd_voxel_scores_000000.npy"
-    points = "/media/tes_unreal/Samsung_T5/BA/BackupDatasets/AnomalyDatasets/AnoVox/Scenario_c8d20e26-7eaf-425b-8f86-c26bdd4ba365/PCD/PCD_271.pcd"
+    points = "<...>/AnomalyDatasets/AnoVox/Scenario_c8d20e26-7eaf-425b-8f86-c26bdd4ba365/PCD/PCD_271.pcd"
     merged_pcd = merge_preds_to_points(preds, points)
     np.save("score12pcd.npy", merged_pcd)

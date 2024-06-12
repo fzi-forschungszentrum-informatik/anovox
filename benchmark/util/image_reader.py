@@ -104,7 +104,7 @@ def cut(image):
     print(image_arr.shape)
 
     # image = Image.fromarray(image_arr)
-    # ("/home/tes_unreal/Desktop/BA/RbA/cutimage.png", image_arr)
+    # ("<...>/RbA/cutimage.png", image_arr)
     # image.show()
     return image_arr
 
@@ -120,11 +120,11 @@ def mask(input_path):
     print("mask shape", mask.shape)
     copy[mask] = 255
     print("copy shape after", copy.shape)
-    # iio.imwrite('/home/tes_unreal/Desktop/BA_gitlab/anomaly_benchmark/cityscapes.png', copy)
-    # iio.imwrite('/home/lukasnroessler/Projects/anomaly_benchmark/mask.png', copy)
+    # iio.imwrite('<...>/anovox/benchmark/cityscapes.png', copy)
+    # iio.imwrite('<...>/anovox/benchmark/mask.png', copy)
     copy_ = Image.fromarray(copy)
     copy_ = copy_.convert("L")
-    copy_.save('/home/tes_unreal/Desktop/BA_gitlab/anomaly_benchmark/mask.png')
+    copy_.save('<...>/anovox/benchmark/mask.png')
 
 
 def color_semantics(image):

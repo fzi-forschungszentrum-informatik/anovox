@@ -307,7 +307,7 @@ def merge_preds_to_points(preds, points):
 
 def main(args):
     # depth_img_dir = os.path.join(args.dataset_path, 'DEPTH_IMG')
-    # scores_dir = '/home/tes_unreal/Desktop/BA/RbA/anomaly_scores/swin_b_1dl/anovox'
+    # scores_dir = '<...>/RbA/anomaly_scores/swin_b_1dl/anovox'
 
     scores_data = sorted(os.listdir(args.scores_dir))
 
@@ -353,7 +353,7 @@ def main(args):
     else:
         raise NameError('No data type selected. Choose between --images and --pointclouds')
 
-    # output_path = '/home/tes_unreal/Desktop/BA/RbA/voxelpreds'
+    # output_path = '<...>/RbA/voxelpreds'
 
 
 
@@ -362,7 +362,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='OOD Evaluation')
 
-    parser.add_argument('--dataset_path', type=str, # default='/home/lukasnroessler/Anomaly_Datasets/AnoVox',
+    parser.add_argument('--dataset_path', type=str, # default='<...>/Anomaly_Datasets/AnoVox',
                         help=""""path to anovox dataset""")
 
     parser.add_argument('--camera_fov', type=float, default=90.0,
