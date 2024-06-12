@@ -1,0 +1,12 @@
+[submodule "detectron2"]
+	path = detectron2
+	url = https://github.com/lukasnroessler/detectron2.git
+[submodule "Open-set-M2F"]
+	path = Open-set-M2F
+	url = https://github.com/lukasnroessler/Open-set-M2F.git
+[submodule "RbA"]
+	path = RbA
+	url = https://github.com/lukasnroessler/RbA.git
+[submodule "Open_world_3D_semantic_segmentation"]
+	path = Open_world_3D_semantic_segmentation
+	url = https://github.com/lukasnroessler/Open_world_3D_semantic_segmentation.git

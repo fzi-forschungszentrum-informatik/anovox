@@ -1,0 +1,14 @@
+*.pkl
+*.pth
+*.0
+*.txt
+*.png
+*.jpg
+*.pcd
+*.ply
+*,npy
+*.csv
+*.json
+output_vis/
+lidar4_0.5_centerpoint/
+eval/__pycache__/
