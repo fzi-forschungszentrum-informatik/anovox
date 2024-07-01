@@ -10,7 +10,8 @@ adapted sensor configurations. Ground truth is provided not only in semantic cam
 voxel representations
 in order to compare anomaly detection methods based on different sensor modalities.
 
-https://github.com/daniel-bogdoll/anovox/assets/19552411/40461843-c088-472d-a8bf-e68659a5f509
+[![AnoVox Teaser](https://img.youtube.com/vi/-d9NDQ43I_Q/0.jpg)](https://www.youtube.com/watch?v=-d9NDQ43I_Q)
+
 
 ## Prerequisites
 
