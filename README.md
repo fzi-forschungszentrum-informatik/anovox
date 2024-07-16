@@ -12,6 +12,7 @@ in order to compare anomaly detection methods based on different sensor modaliti
 
 [![AnoVox Teaser](https://img.youtube.com/vi/-d9NDQ43I_Q/0.jpg)](https://www.youtube.com/watch?v=-d9NDQ43I_Q)
 
+[![AnoVox Anomalies](https://img.youtube.com/vi/4fop2avUwNM/0.jpg)](https://www.youtube.com/watch?v=4fop2avUwNM)
 
 ## Prerequisites
 
